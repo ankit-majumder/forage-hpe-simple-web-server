@@ -17,5 +17,9 @@ public class Controller {
         return employeeDao.getEmployees();
     }
 
+    @PostMapping("")
+    public void addEmployee(@RequestBody Employee employee){
+        employeeDao.addEmployee(employee);
+    }
 
 }

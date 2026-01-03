@@ -16,5 +16,7 @@ public class DAO {
     public Employees getEmployees(){
         return employees;
     }
-
+    public void addEmployee(Employee employee){
+        employees.getEmployeeList().add(employee);
+    }
 }
